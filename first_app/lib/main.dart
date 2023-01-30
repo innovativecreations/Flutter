@@ -12,7 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text("Yo")),
-        body: Text("Hey, I've alive"),
+        body: Column(children: const [
+          Text("Hey, I've alive"),
+          ElevatedButton(
+            onPressed: null,
+            child: Text('Button'),
+          ),
+        ]),
       ),
     );
   }
