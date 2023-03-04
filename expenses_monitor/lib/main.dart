@@ -24,6 +24,12 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.add),
+          )
+        ],
         title: Text("Expense Monitor"),
       ),
       // ignore: prefer_const_literals_to_create_immutables
@@ -43,6 +49,10 @@ class Homepage extends StatelessWidget {
               ),
               UserTransaction(),
             ]),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {},
       ),
     );
   }
